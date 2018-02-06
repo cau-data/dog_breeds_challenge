@@ -14,7 +14,7 @@ This last code will download the [Standford Dogs Dataset](http://vision.stanford
 To train a model, run `main.py` with the desired model architecture:
 
 ```shell
-python main.py --model 'squeezenet' --epoch 5
+python main.py --model 'squeezenet' --pretrained True --epoch 5
 ```
 In this example a pretrained model of the squeezenet1.1 will be loaded and running through 5 epochs.
 
@@ -45,7 +45,7 @@ optional arguments:
 ```
 
 ### Example usage
-The different models are: resnet101, resnet34 and squeezenet. It is important to know the capacity of your computer, the code will automatically use a gpu if you have one, but some models are very RAM consuming. You can chose a smaller batch size or a lighter network (squeezenet < resnet34 < resnet101).
+The different models are: resnet101, resnet34 and squeezenet. It is important to know the capacity of your computer, the code will automatically use a gpu if you have one, but some models are very RAM consuming. You can choose a smaller batch size or a lighter network (squeezenet < resnet34 < resnet101).
 
 If you have downloaded the `saved_models` folder in the [google drive](https://drive.google.com/drive/u/1/folders/1m4KSRP_kCq6rxbzAyqgHBg4kF3-Qxx0p) therefore you can run model that I have already pretrained on the dog dataset, if doing so use a low learning rate (~0.00001) in order to continue the training where it was left. Here is an example of the correct command:
 
