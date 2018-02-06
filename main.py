@@ -158,7 +158,7 @@ if __name__ == "__main__":
     parser.add_argument('--model', type=str, default='squeezenet', help='Name or path to the model')
     parser.add_argument('--pretrained', type=bool, default=True, help='If the model is pretrained or not, freeze all the layers except the last')
     parser.add_argument('--step', type=int, default=4, help='Number of steps before decreasing the learning rate')
-    parser.add_argument('--gamma', type=float, default=0.5, help='Factor by witch you would like to decrease the learning rate')
+    parser.add_argument('--gamma', type=float, default=0.5, help='Factor by whitch the learning rate is decreased')
     parser.add_argument('--batchsize', type=int, default=64, help='training batch size')
     parser.add_argument('--epoch', type=int, default=10, help='number of epochs to train for')
     parser.add_argument('--lr', type=float, default=0.08, help='Learning Rate. Default=0.08')
